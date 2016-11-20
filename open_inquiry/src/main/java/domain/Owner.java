@@ -1,14 +1,12 @@
-package domain;
+package Domain;
 
 import java.util.Set;
 
-public class Owner {
+public class Owner extends SanctionHolder {
 
-	private String dni;
-	private String name;
-	private String lastName;
-	private String fullAddress;
-	private Set<Inquiry> inquiries;
+	public Owner(int id) {
+		super(id);
+	}
 	
 	/**
 	 * 
@@ -18,54 +16,21 @@ public class Owner {
 	 * @param fullAddress
 	 */
 	public Owner(String dni, String name, String lastName, String fullAddress) {
-		this.dni = dni;
-		this.name = name;
-		this.lastName = lastName;
-		this.fullAddress = fullAddress;
-	}
-	
-	public Owner(String dni){
-		this.dni = dni;
-	}
-
-	public String getDni() {
-		return dni;
-	}
-
-	public void setDni(String dni) {
-		this.dni = dni;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getFullAddress() {
-		return fullAddress;
-	}
-
-	public void setFullAddress(String fullAddress) {
-		this.fullAddress = fullAddress;
+		super(dni, name, lastName, fullAddress);
 	}
 
 	public Set<Inquiry> getInquiries() {
-		return inquiries;
+		// TODO - implement Owner.getInquiries
+		throw new UnsupportedOperationException();
 	}
 
-	public void setInquiries(Set<Inquiry> inquiries) {
-		this.inquiries = inquiries;
+	/**
+	 * 
+	 * @param inquiries
+	 */
+	public void setInquiries(int inquiries) {
+		// TODO - implement Owner.setInquiries
+		throw new UnsupportedOperationException();
 	}
 
 }

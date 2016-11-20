@@ -1,4 +1,5 @@
-package persistence;
+package Persistence;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
