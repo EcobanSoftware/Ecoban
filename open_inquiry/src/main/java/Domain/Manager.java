@@ -21,7 +21,7 @@ public class Manager {
 	 * @param location
 	 * @param maxSpeed
 	 */
-	public int openInquiry(string license, double speed, string location, double maxSpeed) {
+	public int openInquiry(String license, double speed, String location, double maxSpeed) {
 		// TODO - implement Manager.openInquiry
 		throw new UnsupportedOperationException();
 	}

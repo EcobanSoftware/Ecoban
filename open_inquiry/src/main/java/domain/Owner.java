@@ -8,6 +8,7 @@ public class Owner extends SanctionHolder {
 		super(id);
 	}
 	
+	
 	/**
 	 * 
 	 * @param dni

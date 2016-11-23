@@ -13,6 +13,7 @@
 	
 	<modules>
 		<module>open_inquiry</module>
+		<module>penalty_disciplinary_procedure</module>
 	</modules>
 	
 	<organization>
