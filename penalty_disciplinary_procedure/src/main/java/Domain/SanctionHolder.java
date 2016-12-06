@@ -27,6 +27,10 @@ public abstract class SanctionHolder {
 		this.fullAddress = fullAddress;
 	}
 	
+	public SanctionHolder(int id){
+		this.id = id;
+	}
+	
 	
 	public int getId() {
 		return id;
