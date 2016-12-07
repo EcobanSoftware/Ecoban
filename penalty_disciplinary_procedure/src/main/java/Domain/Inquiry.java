@@ -2,6 +2,8 @@ package Domain;
 
 import java.util.Date;
 
+import Persistence.OwnerDAO;
+
 public class Inquiry {
 
 	private int id;
@@ -19,8 +21,9 @@ public class Inquiry {
 	 * @param speed
 	 * @param maxSpeed
 	 * @param location
+	 * @throws Exception 
 	 */
-	public Inquiry(String license, double speed, double maxSpeed, String location) {
+	public Inquiry(String license, double speed, double maxSpeed, String location) throws Exception {
 		this.dateofissue = new Date(System.currentTimeMillis());
 		this.speed=speed;
 		this.maxspeed = maxSpeed;
@@ -117,9 +120,10 @@ public class Inquiry {
 	/**
 	 * 
 	 * @param license
+	 * @throws Exception 
 	 */
-	public Owner findOwner(String license) {
-		OwnerDao dao=new OwnerDao();
+	public Owner findOwner(String license) throws Exception {
+		OwnerDAO dao=new OwnerDAO();
 		return dao.findByLicense(license);
 	}
 

@@ -7,9 +7,9 @@ import Persistence.*;
  */
 public class Manager {
 
-	private Manager manager;
+	private static Manager manager;
 
-	public Manager ManagerHolder() {
+	public static Manager ManagerHolder() {
 		if(manager == null){
 			manager = new Manager();
 			return manager;

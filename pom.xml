@@ -17,6 +17,7 @@
 		<module>penalty_payment</module>
 		
 		<module>owner_change</module>
+		<module>RadarBehavior</module>
 	</modules>
 	
 	<organization>
